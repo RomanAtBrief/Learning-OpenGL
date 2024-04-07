@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: clang++ build active file",
+            "command": "/usr/bin/clang++",
+            "args": [
+                "-g",
+                "-I${workspaceFolder}/dependencies/include",
+                "-L${workspaceFolder}/dependencies/library",
+                "${workspaceFolder}/dependencies/library/libglfw.3.4.dylib",
+                "${workspaceFolder}/dependencies/library/libGLEW.2.2.0.dylib",
+                "${file}",
+                "-o",
+                "${workspace}/build/app",
+                "-framework",
+                "OpenGL",
+                "-Wno-deprecated"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": ["$gcc"],
+            "group": "build",
+            "detail": "compiler: /usr/bin/clang++"
+        }
+    ]
+}
