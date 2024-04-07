@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/rgorshkov/Documents/GitHub/Learning-OpenGL/01_OpenGL_Window/src/main'
+binary-path:     '/Users/rgorshkov/Documents/GitHub/Learning-OpenGL/01_OpenGL_Window/build/main'
 relocations:
   - { offsetInCU: 0x2F42, offset: 0x2F42, size: 0x8, addend: 0x0, symName: __ZNSt3__124__put_character_sequenceB8ue170006IcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_PKS4_m, symObjAddr: 0x114, symBinAddr: 0x100003298, symSize: 0x1EC }
   - { offsetInCU: 0x48A8, offset: 0x48A8, size: 0x8, addend: 0x0, symName: __ZNSt3__1lsB8ue170006INS_11char_traitsIcEEEERNS_13basic_ostreamIcT_EES6_PKc, symObjAddr: 0x48, symBinAddr: 0x1000031CC, symSize: 0x48 }

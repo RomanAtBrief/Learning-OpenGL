@@ -7,13 +7,16 @@
             "command": "/usr/bin/clang++",
             "args": [
                 "-g",
-                "-I${workspaceFolder}/dependencies/include",
-                "-L${workspaceFolder}/dependencies/library",
-                "${workspaceFolder}/dependencies/library/libglfw.3.4.dylib",
-                "${workspaceFolder}/dependencies/library/libGLEW.2.2.0.dylib",
+                "-I${workspaceFolder}/01_OpenGL_Window/dependencies/include",
+                "-L${workspaceFolder}/01_OpenGL_Window/dependencies/library",
+                "${workspaceFolder}/01_OpenGL_Window/dependencies/library/libglfw.3.4.dylib",
+                "${workspaceFolder}/01_OpenGL_Window/dependencies/library/libGLEW.2.2.0.dylib",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${workspaceFolder}/01_OpenGL_Window/build/${fileBasenameNoExtension}",
+                "-framework",
+                "OpenGL",
+                "-Wno-deprecated"
             ],
             "options": {
                 "cwd": "${fileDirname}"

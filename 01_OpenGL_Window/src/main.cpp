@@ -12,14 +12,14 @@
  * Include GLEW - OpenGL Extension Wranler.
  * It responsible for loading OpenGL extensions at run-time
  */
-// #include <GLEW/glew.h>
+#include <GLEW/glew.h>
 
 /*
  * Include GLFW - Graphics Library Framework.
  * It provides a simple API for creating windows, contexts and surfaces,
  * receiving input and events.
  */
-// #include <GLFW/glfw3.h>
+#include <GLFW/glfw3.h>
 
 /* Main program */
 int main()
